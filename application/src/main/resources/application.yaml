@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  servlet:
+    application-display-name: Scaffolding API Application
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org:
+      zalando:
+        logbook: TRACE
+client:
+  employee:
+    url: https://reqres.in/api/
